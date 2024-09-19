@@ -1,0 +1,23 @@
+;Cassandra Mendoza
+;41726991
+;I pledge that the submission is solely my work, that I have neither given, nor received help from anyone
+
+segment     .data
+
+a   dq  4    
+b   dq  1  
+c   dq  7
+d   dq  2
+
+segment .text
+global main
+
+main:
+    mov rax, [a]
+    mov rbx, [b]
+    sub rax, [c]
+    sub rbx, [d]
+    imul rax, rax
+    imul rbx, rbx
+    ret
+    
